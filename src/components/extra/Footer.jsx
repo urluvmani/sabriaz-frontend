@@ -16,7 +16,9 @@ const Footer = () => {
     try {
       const res = await axios.post(
         "https://sabriaz-backend.onrender.com/api/subscribe",
-        { email }
+        {
+          email,
+        }
       );
       alert(res.data.message);
       setEmail("");

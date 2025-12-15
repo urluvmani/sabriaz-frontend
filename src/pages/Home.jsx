@@ -116,68 +116,69 @@ const Home = () => {
 
       {/* ---------- HEADINGS ---------- */}
       <div className="headings py-10 flex flex-col items-center gap-1 px-5 text-center">
-        <h1 className="text-lg font-bold">Discover fragrances that define your presence.</h1>
+        <h1 className="text-lg font-bold">
+          Discover fragrances that define your presence.
+        </h1>
         <h2 className="text-sm md:text-base">
-        Crafted with precision, inspired by elegance, made to last all day.
+          Crafted with precision, inspired by elegance, made to last all day.
         </h2>
-        <h3 className="text-yellow-700 font-semibold">Experience luxury that stays with you.</h3>
+        <h3 className="text-yellow-700 font-semibold">
+          Experience luxury that stays with you.
+        </h3>
       </div>
 
       {/* ---------------- isFeatured SHOWCASE ---------------- */}
-     <div
-  className={`
+      <div
+        className={`
     productsShowCase
     flex items-center   md:justify-center
     gap-3
-    h-[45vh] md:h-[55vh]
+    h-[20vh] md:h-[55vh]
     px-3
     ${isFeatured.length === 1 && "justify-center"}
     overflow-x-auto md:overflow-visible
     scrollbar-hide
   `}
->
-  {isFeatured.length === 0 ? (
-    <h2 className="text-gray-500 mx-auto">
-      No featured products yet.
-    </h2>
-  ) : (
-    isFeatured.map((p) => (
-      <Link
-        key={p._id}
-        to={`/product/${p._id}`}
-        className="
-          min-w-[180px] sm:min-w-[200px] md:w-80
+      >
+        {isFeatured.length === 0 ? (
+          <h2 className="text-gray-500 mx-auto">No featured products yet.</h2>
+        ) : (
+          isFeatured.map((p) => (
+            <Link
+              key={p._id}
+              to={`/product/${p._id}`}
+              className="
+          min-w-[160px] sm:min-w-[200px] md:w-80
           h-[100%]
           relative group flex-shrink-0
         "
-      >
-        <img
-          className="
+            >
+              <img
+                className="
             object-cover absolute inset-0
             w-full h-full
             opacity-100 group-hover:opacity-0
             transition-opacity duration-500
             rounded-lg
           "
-          src={p.images?.[0] || "noimg.webp"}
-          alt=""
-        />
-        <img
-          className="
+                src={p.images?.[0] || "noimg.webp"}
+                alt=""
+              />
+              <img
+                className="
             object-cover absolute inset-0
             w-full h-full
             opacity-0 group-hover:opacity-100
             transition-opacity duration-500
             rounded-lg
           "
-          src={p.images?.[1] || p.images?.[0]}
-          alt=""
-        />
-      </Link>
-    ))
-  )}
-</div>
-
+                src={p.images?.[1] || p.images?.[0]}
+                alt=""
+              />
+            </Link>
+          ))
+        )}
+      </div>
 
       {/* ---------- CATEGORY SHOWCASE ---------- */}
       <CategoryShowcase />
