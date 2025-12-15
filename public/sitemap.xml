@@ -6,13 +6,6 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://sabriaz.com/login</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://sabriaz.com/register</loc>
-    <changefreq>weekly</changefreq>
-  </url>
   <url>
     <loc>https://sabriaz.com/shop</loc>
     <changefreq>weekly</changefreq>
@@ -23,18 +16,6 @@
   </url>
   <url>
     <loc>https://sabriaz.com/contact</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://sabriaz.com/cart</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://sabriaz.com/checkout</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://sabriaz.com/my-orders</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
