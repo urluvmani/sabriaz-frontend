@@ -1,0 +1,26 @@
+User-agent: *
+# -------------------------
+# ALLOWED PUBLIC PAGES
+# -------------------------
+Allow: /
+Allow: /shop
+Allow: /about
+Allow: /contact
+Allow: /category/mens-perfumes
+Allow: /category/ladies-perfumes
+
+# -------------------------
+# BLOCKED / PRIVATE PAGES
+# -------------------------
+Disallow: /admin
+Disallow: /admin/*
+Disallow: /cart
+Disallow: /checkout
+Disallow: /my-orders
+Disallow: /login
+Disallow: /register
+
+# -------------------------
+# SITEMAP LOCATION
+# -------------------------
+Sitemap: https://sabriaz.com/sitemap.xml
