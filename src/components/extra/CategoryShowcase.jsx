@@ -21,6 +21,7 @@ const CategoryShowcase = () => {
       className="
         categoryShowcase 
         mt-20 
+        
         md:pl-4
         pl-10
         flex justify-center md:justify-center 

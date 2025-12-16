@@ -120,11 +120,11 @@ const AdminShowcaseCategories = () => {
   };
 
   return (
-    <div className="p-4 overflow-hidden md:p-8">
+    <div className=" overflow-hidden md:p-8">
       <h1 className="text-3xl font-bold mb-6">Showcase Categories</h1>
 
       {/* FORM */}
-      <div className="bg-white p-6 rounded shadow-md max-w-lg mb-10">
+      <div className=" pr-5 rounded shadow-md w-full mb-10">
         <h2 className="text-xl font-semibold mb-4">
           {formMode === "add"
             ? "Add Showcase Category"
