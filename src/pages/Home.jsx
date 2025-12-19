@@ -19,7 +19,7 @@ const Home = () => {
 
   const fetchSettings = async () => {
     const res = await axios.get(
-      "https://dawn-dawn-809c.muzammil786hma.workers.dev/"
+      "https://sabriaz-backend.onrender.com/api/settings"
     );
     if (res.data) setSettings(res.data);
   };
